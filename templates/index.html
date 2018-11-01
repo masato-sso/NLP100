@@ -1,0 +1,16 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    </head>
+    <body>
+        <form action="/result" method="post">
+            名前：<input type="text" name="name"><br>
+            タグ：<input type="text" name="tag"><br>
+            <button name="post" value="post_value">検索</button>
+        </form>
+        {% for item in message %}
+        <p>{{ item }}</p><br>
+        {% endfor %}
+    </body>
+</html>
